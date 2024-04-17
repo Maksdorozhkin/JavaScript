@@ -39,3 +39,18 @@ console.log(objectA.a)
 // добавляем новое свойство объекту
 copyOfA.c = 'abc'
 console.log(objectA)
+
+// Динамическая типизация, пример из функции сделали число
+function ab() {
+    console.log("Hey there")
+}
+
+ab()
+// ab = 10 
+ab()
+
+// const для объявления переменных, для предотвращения переприсваивания переменной, используем стрелочную функцию
+const ad = () => {
+    console.log('Hey there')
+}
+ad()
