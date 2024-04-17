@@ -34,3 +34,20 @@ const myBike = {
     isPopular: false
 }
 console.log(myBike.info.engineVolume)
+
+// СОКРАЩЕННЫЙ ФОРМАТ ЗАПИСИ СВОЙСТВ, использование переменных
+const name = "Maksim"
+const postsQty = 23
+// обычный формат
+// const userProfile = {
+// 	name: name,
+// 	postsQty: postsQty,
+// 	hasSignetArgument: false
+// }
+// сокращенный 
+const userProfile = {
+	name,
+	postsQty,
+	hasSignetArgument: false
+}
+console.log(userProfile)
