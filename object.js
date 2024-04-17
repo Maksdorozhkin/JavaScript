@@ -51,3 +51,12 @@ const userProfile = {
 	hasSignetArgument: false
 }
 console.log(userProfile)
+
+// МЕТОДЫ - свойства объекта которые содержат функции
+const myWorck = {
+	company: "UMT",
+	myPosition: function () {
+		console.log('shift supervisor')
+	}
+}
+myWorck.myPosition() // вызов метода
