@@ -60,3 +60,12 @@ const myWorck = {
 	}
 }
 myWorck.myPosition() // вызов метода
+
+// СОКРАЩЕННЫЙ ФОРМАТ ЗАПИСИ МЕТОДОВ, убираем ключевое слово function просто ставим скобки после названия свойства 
+const myWorckUMT = {
+	company: "UMT",
+	myPosition() {  // скобки означают что это функция
+		console.log('shift supervisor')
+	}
+}
+myWorckUMT.myPosition()
