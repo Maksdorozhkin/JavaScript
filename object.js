@@ -114,3 +114,4 @@ newPerson2.name = 'Katya'
 
 console.log(newPerson)
 console.log(newPerson2)
+
