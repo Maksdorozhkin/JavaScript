@@ -24,5 +24,29 @@ function myFun(a,b) {
 
 console.log(myFun(10.2, 40.36))
 
-// ПЕРЕДАЧА ЗНАЧЕНИЯ ПО ССЫЛКЕ
- 
+// ПЕРЕДАЧА ЗНАЧЕНИЯ ПО ССЫЛКЕ, a и personeOne будут ссылаться на один объект (ВНУТРИ ФУНКЦИИ НЕ РЕКОМЕНДУЕТСЯ МЕНЯТЬ ВНЕШНИЕ ОБЪЕКТЫ)
+const personOne = {
+	name: 'Maks',
+	age: 43
+} 
+
+function increasePersonAge(a) {
+	a.age += 1
+	return a
+}
+
+increasePersonAge(personOne)
+console.log(personOne.age)
+
+// ДЕЛАЕМ КОПИЮ ОБЪЕКТА, ВНУТРИ ФУНКЦИИ создаем новый объект
+function increasePersonAge2 (b) {
+	const updatePerson = { ...b }//делаю копию объекта
+	updatePerson.age += 1
+	return updatePerson
+}
+
+const updatePersonOne = increasePersonAge2(personOne)
+console.log(personOne.age)
+console.log(updatePersonOne.age)
+
+
