@@ -77,7 +77,7 @@ const multByFactor2 = (value, multiplier = 1) => {
 };
 multByFactor2(10);
 
-//  Интересный пример возвращает объект с текущей датой
+//  Интересный пример возвращает объект с текущей датой (неявный возврат объекта)
 const newPost = (post, addetAT = Date()) => ({
   ...post,
   addetAT,
@@ -88,3 +88,15 @@ const firstPost = {
 };
 
 console.table(newPost(firstPost));
+
+//  явный возврат объекта
+const newPost1 = (post, addetAT = Date()) => {
+  return console.table({ ...post, addetAT });
+};
+
+const firstPost1 = {
+  id: 1,
+  author: "Maks",
+};
+
+newPost1(firstPost1);
