@@ -87,4 +87,4 @@ const firstPost = {
   author: "Maks",
 };
 
-console.log(newPost(firstPost));
+console.table(newPost(firstPost));
