@@ -114,3 +114,6 @@ newPerson2.name = 'Katya'
 
 console.log(newPerson)
 console.log(newPerson2)
+
+//  как узнать тип объекта 
+console.log(typeof(newPerson))
