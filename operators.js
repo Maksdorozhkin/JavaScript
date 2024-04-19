@@ -33,3 +33,32 @@ b && console.log("Выполнено");
 
 let c;
 c && console.log("Выполнено");
+
+//  оператор разделения объекта на свойства (...) см. вывод
+const button = {
+  width: 200,
+  text: "Buy",
+};
+
+const redButton = {
+  ...button, // применение оператора
+  color: "red",
+};
+console.table(redButton);
+
+// объединение объектов с помощью оператора разделения )) (...)
+const buttonInfo = {
+  text: "Buy",
+};
+
+const buttonStyle = {
+  color: "yellow",
+  width: 200,
+  height: 300,
+};
+
+const newButton = {
+  ...buttonInfo,
+  ...buttonStyle,
+};
+console.table(newButton);
