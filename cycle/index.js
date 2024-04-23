@@ -16,3 +16,23 @@ let res = myArray.forEach((a) => console.log(a));
 myArray.forEach((element, index) => {
   console.log(element, index);
 });
+
+// for in для объектов
+const myObject = {
+  x: 10,
+  y: true,
+  z: "abc",
+};
+for (const key in myObject) {
+  console.log(key, myObject[key]);
+}
+
+// forEach для объектов, перебор свойств и значений
+Object.keys(myObject).forEach((key) => {
+  console.log(key, myObject[key]);
+});
+
+// перебор значений
+Object.values(myObject).forEach((value) => {
+  console.log(value);
+});
