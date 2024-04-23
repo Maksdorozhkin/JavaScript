@@ -42,3 +42,15 @@ const myNewArray = [true, 10, "abc", null];
 for (const key in myNewArray) {
   console.log(myNewArray[key]);
 }
+
+// FOR OF цикл //! не подходит для объектов т.к. объект не итерированный
+// for of для строк - итерация по строкам
+const myString = "Hey";
+for (const letter of myString) {
+  console.log(letter);
+}
+
+// for of для массивов
+for (const element of myNewArray) {
+  console.log(element);
+}
