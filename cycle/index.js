@@ -36,3 +36,9 @@ Object.keys(myObject).forEach((key) => {
 Object.values(myObject).forEach((value) => {
   console.log(value);
 });
+
+// for in для массивов
+const myNewArray = [true, 10, "abc", null];
+for (const key in myNewArray) {
+  console.log(myNewArray[key]);
+}
