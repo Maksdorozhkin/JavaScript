@@ -49,3 +49,17 @@ const newReturnMyArray = myArray2.map((x) => {
   return x * 20; // без return вернет undefined (неявно возвращать можно только в стрелочной функции)
 });
 console.log(newReturnMyArray);
+
+//! метод reduce
+const reduceMyArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+console.log(reduceMyArray.reduce((acc, value) => acc + value, 0));
+
+const strArrayReduce = ["Maks", "Andrew", "Katya"];
+
+const red = strArrayReduce.reduce((acc, value, index, array) => {
+  return {
+    ...acc,
+    [index]: value,
+  };
+}, {});
+console.log(red);
