@@ -8,3 +8,10 @@
  *
  * 4. Вызовите функцию
  */
+
+function printMyName() {
+  const myName = "Maksim";
+  console.log(myName);
+}
+
+printMyName();

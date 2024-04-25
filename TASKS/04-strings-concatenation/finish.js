@@ -10,3 +10,8 @@
  *
  * 3. Выведите значение последней переменной в консоль
  */
+const myFirstName = "Maksim",
+  myLastName = "Dorozhkin",
+  myProfession = "Software engineer";
+const fullString = `My name is ${myFirstName} ${myLastName} and i ${myProfession.toLowerCase()}`;
+console.log(fullString);

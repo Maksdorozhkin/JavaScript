@@ -10,3 +10,10 @@
  *
  * 5. Результат вызовов функции выведите в консоль
  */
+
+let a = function (name) {
+  return `Hi, ${name}!`;
+};
+
+console.log(a("Maksim"));
+console.log(a("Andrew"));

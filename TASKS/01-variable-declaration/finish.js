@@ -7,3 +7,5 @@
  *
  * 3. Выведите значение переменной в консоль
  */
+const myCountry = "Russian Federation";
+console.log(myCountry);

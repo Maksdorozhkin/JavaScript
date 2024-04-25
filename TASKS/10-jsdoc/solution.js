@@ -20,8 +20,8 @@
  * @returns {number} Разница чисел
  */
 function diff(a, b) {
-  return a - b
+  return a - b;
 }
 
-const result = diff(10, 5)
-console.log(result)
+const result = diff(1, 5);
+console.log(result);

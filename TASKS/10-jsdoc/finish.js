@@ -12,3 +12,27 @@
  *
  * 4. Вызовите функцию
  */
+let differenceTwoNumbers = (a, b) => {
+  /** Данная функция возвращает разницу двух чисел,
+   *  от большего отнимает меньшее решил усложнить задачу
+   **/
+
+  if (a > b) {
+    return a - b;
+  } else if (a < b) {
+    return b - a;
+  } else {
+    return "Числа равны";
+  }
+};
+
+console.log(differenceTwoNumbers(12, 13));
+
+function diff(a, b) {
+  /** Функция возвращает разницу двух чисел
+   **/
+  return a - b;
+}
+
+const result = diff(1, 5);
+console.log(result);
