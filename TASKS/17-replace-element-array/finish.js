@@ -8,3 +8,9 @@
  *
  * 4. Выведите в консоль измененный массив
  */
+const myArray = new Array(1, "abc", null, true, {}, []);
+console.log(myArray);
+myArray[1] = "xyz";
+console.log(myArray);
+(myArray[4] = { a: 1, b: 2 }), (myArray[5] = [1, 2, 3, 4, 5]);
+console.log(myArray);

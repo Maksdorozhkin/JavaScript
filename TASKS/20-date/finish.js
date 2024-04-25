@@ -4,3 +4,6 @@
  *
  * 2. Выведите значение в консоль
  */
+let mydate = new Date();
+let milliseconds = mydate.getTime();
+console.log(milliseconds);
