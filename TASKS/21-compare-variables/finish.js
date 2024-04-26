@@ -24,6 +24,8 @@ if (myVariable1 <= myVariable2) {
 
 //! красивое решение
 console.log(parseInt(myVariable1) <= parseInt(myVariable2));
+// * еще пример преобразования строки в число с помощью +
+console.log(+myVariable2);
 
 myVariable1 = "20";
 myVariable2 = 100;
