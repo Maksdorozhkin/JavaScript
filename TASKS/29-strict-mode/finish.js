@@ -5,11 +5,12 @@
  * 2. Что будет, если отключить строгий режим?
  */
 
-'use strict'
+"use strict";
 
 function myFunction() {
-  a = 2
-  return a
+  let a;
+  a = 2;
+  return a;
 }
 
-myFunction()
+myFunction();

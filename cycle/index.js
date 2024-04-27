@@ -17,6 +17,8 @@ myArray.forEach((element, index) => {
   console.log(element, index);
 });
 
+console.log("");
+
 // for in для объектов
 const myObject = {
   x: 10,
@@ -26,6 +28,8 @@ const myObject = {
 for (const key in myObject) {
   console.log(key, myObject[key]);
 }
+
+console.log("");
 
 // forEach для объектов, перебор свойств и значений
 Object.keys(myObject).forEach((key) => {
