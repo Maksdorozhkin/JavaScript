@@ -14,17 +14,34 @@
  *  - для добавления случайного числа в массив с возвратом измененного массива
  */
 
-const MIN = 1000;
-const MAX = 9999;
+const MIN = 1;
+const MAX = 10;
 
-const myNumbers = [2355, 7235, 8135, 1762, 2361, 8351];
+// const myNumbers = [2355, 7235, 8135, 1762, 2361, 8351];
+const myNumbers = [1, 3, 5, 7, 9, 10];
+// const randomNumber = Math.floor(Math.random() * (MAX - MIN + 1)) + MIN;
 
-const randomNumber = Math.floor(Math.random() * (MAX - MIN + 1)) + MIN;
-let myArray = [];
-const a = myNumbers.forEach((elem) => {
-  if (elem != randomNumber) {
-    myArray.push(randomNumber);
-  }
-});
+const randomNumber = (min, max) => {
+  /**Данная функция генерирует и возвращает случайное число исходя из переданных в нее параметров min, max
+   */
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+};
 
-console.log(myNumbers, myArray);
+const addRandomNumberToArray = (arr, min, max) => {
+  /** Данная функция используя три параметра добавляет сгенерированное число в копию массива перед этим проверяя нет ли такого числа в массиве с помощью цикла do while и возвращает обновленный массив
+   */
+  let newRandomNumber;
+  const updatedArr = [...arr];
+
+  do {
+    newRandomNumber = randomNumber(min, max);
+    console.log(newRandomNumber);
+  } while (updatedArr.includes(newRandomNumber));
+
+  updatedArr.push(newRandomNumber);
+
+  return updatedArr;
+};
+const updatedArray = addRandomNumberToArray(myNumbers, MIN, MAX);
+console.log("Updated Array", updatedArray);
+console.log("Original Array", myNumbers);
